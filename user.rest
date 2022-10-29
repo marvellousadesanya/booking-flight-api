@@ -1,0 +1,34 @@
+@url = 'http://localhost:3000/'
+
+GET http://localhost:3000/routes/ HTTP/1.1
+
+###
+GET http://localhost:3000/routes/ HTTP/1.1
+
+###
+POST http://localhost:3000/routes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "flight to UK",
+    "time": "9pm",
+    "price": 23000,
+    "date": "26-06-2022"
+}
+
+###
+GET http://localhost:3000/routes/ HTTP/1.1
+
+###
+PUT http://localhost:3000/routes/a703d6a3-ae71-49d7-a746-c73a18ac7ddc HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "flight to Germany",
+    "time": "10pm",
+    "price": 28000,
+    "date": "26-06-2022"
+}
+
+###
+DELETE http://localhost:3000/routes/45af5d52-79d1-460b-a93d-9135702df928
